@@ -1,0 +1,10 @@
+actor: AcceptanceTester
+modules:
+    enabled:
+        - \Tests\Helper\Acceptance
+        - WebDriver:
+            browser: chrome
+            url: http://127.0.0.1:8000
+        - Laravel:
+            part: ORM
+            environment_file: .env.testing
